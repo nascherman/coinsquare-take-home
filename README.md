@@ -1,7 +1,7 @@
 # Coinsquare take home - Take home
 
 Front end assessment for Coinsquare. Built from "scratch" with 
-no app scaffolding used. Time to complete was about 5 hours with many coffee breaks. The app can be previewed at https://coinbase-take-home.firebaseapp.com/ 
+no app scaffolding used. Time to complete was about 5 hours with many coffee breaks. The app can be previewed at https://react-example-b0dd9.firebaseapp.com 
 
 ## Technologies used
 - React / Redux
