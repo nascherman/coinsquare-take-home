@@ -1,0 +1,55 @@
+{
+  "name": "coinsquare-take-home",
+  "version": "1.0.0",
+  "description": "Coinsquare frontend take home",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server",
+    "build": "set NODE_ENV='production' && webpack -p",
+    "deploy": "npm run build && firebase deploy",
+    "firebase-init": "firebase login && firebase init"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-class-properties"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.4.3",
+    "node-sass": "^4.9.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-mock-store": "^1.5.1",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

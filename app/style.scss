@@ -1,0 +1,105 @@
+$label-text-padding: 20px;
+$nested-label-padding: 20px;
+$title-size: 0.75rem;
+$button-color: #253ae4;
+$button-hover-color: #5161e4;
+$container-bg-color: #f8f8f8;
+$input-border-color: #4e4e4e;
+
+body {
+  font-family: 'Roboto', arial;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  background-color: $container-bg-color;
+  width: 14rem;
+  padding: 10px 35px 40px;
+}
+
+.account-balance {
+  padding-left: $label-text-padding;
+  margin-bottom: $nested-label-padding;
+
+  span {
+    font-size: $title-size;
+  }
+
+  &__currency {
+    padding-left: 15px;
+
+    &--margin-top {
+      margin-top: 10px;
+    }
+
+    .code {
+      font-weight: bold;
+    }
+
+    span + span {
+      margin-left: 10px;
+    }
+  }
+}
+
+.exchange-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  label {
+    align-self: flex-start;
+    margin-left: $label-text-padding;
+    font-size: $title-size;
+  }
+
+  input {
+    display: block;
+    font-size: $title-size;
+  }
+
+  input,
+  select,
+  .mock-input {
+    height: 2rem;
+    width: 90%;
+    box-sizing: border-box;
+    padding-left: $nested-label-padding;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: $input-border-color;
+    border-width: 1px;
+    margin: 10px 0;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .mock-input {
+    display: flex;
+    border-style: solid;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    height: 3.5rem;
+    background-color: $button-color;
+    color: white;
+    border: 0;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: $button-hover-color
+    }
+
+    &:disabled {
+      background-color: $input-border-color;
+    }
+  }
+}
